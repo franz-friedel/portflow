@@ -1,0 +1,346 @@
+{
+  "name": "My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "portflow-enquiry",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "8966cbc9-5b37-4746-9b73-baf2a1c26ef8",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -880,
+        0
+      ],
+      "webhookId": "6bb36f5d-677b-416e-ae81-6f8dea5e393f"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1FxnSpEe-gJ-oSCqScrw-9Bt2-5xaNIx92rZ_wgoPSEQ",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "quote_number",
+              "displayName": "quote_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "timestamp",
+              "displayName": "timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "customer_name",
+              "displayName": "customer_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "company_name",
+              "displayName": "company_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "phone",
+              "displayName": "phone",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "oirigin_port",
+              "displayName": "oirigin_port",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "destination_port",
+              "displayName": "destination_port",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "shipment_mode",
+              "displayName": "shipment_mode",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "container_type",
+              "displayName": "container_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "commodity",
+              "displayName": "commodity",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "gross_weight",
+              "displayName": "gross_weight",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "weight_unit",
+              "displayName": "weight_unit",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "pieces_quantity",
+              "displayName": "pieces_quantity",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "shipper_name",
+              "displayName": "shipper_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "shipper_address",
+              "displayName": "shipper_address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "consignee_name",
+              "displayName": "consignee_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "consignee_address",
+              "displayName": "consignee_address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "preferred_date",
+              "displayName": "preferred_date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "52ee8a5a-3f0c-41b3-a38d-fed8c53b0130",
+      "name": "Save to Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -432,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "LnIRIhzqkeJzFOeE",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get incoming data from webhook body\nconst items = $input.all();\nconst data = items[0].json.body;\n\n// Generate quote number and timestamp\nconst quote_number = 'QT' + Date.now();\nconst timestamp = new Date().toISOString();\n\n// Return ONLY fields matching Google Sheet columns\nreturn {\n  json: {\n    quote_number: quote_number,\n    timestamp: timestamp,\n    status: 'New Enquiry',\n    customer_name: data.customer_name || '',\n    company_name: data.company_name || '',\n    email: data.email || '',\n    phone: data.phone ? \"'\" + data.phone : '',\n    origin_port: data.origin_port || '',\n    destination_port: data.destination_port || '',\n    shipment_mode: data.shipment_mode || '',\n    container_type: data.container_type || '',\n    commodity: data.commodity || '',\n    gross_weight: data.gross_weight || '',\n    weight_unit: data.weight_unit || '',\n    pieces_quantity: data.pieces_quantity || '',\n    shipper_name: data.shipper_name || '',\n    shipper_address: data.shipper_address || '',\n    consignee_name: data.consignee_name || '',\n    consignee_address: data.consignee_address || '',\n    preferred_date: data.preferred_date || ''\n  }\n};"
+      },
+      "id": "250b5542-01ac-40f5-a147-6cd85b4545bb",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -656,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "franz@portflow.org",
+        "toEmail": "={{$json.email}}",
+        "subject": "=Quote Request Confirmed - {{$json.quote_number}} - {{$json.origin_port}} to {{$json.destination_port}}",
+        "html": "=<!DOCTYPE html>\n<html>\n<head>\n    <style>\n        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }\n        .container { max-width: 600px; margin: 0 auto; padding: 20px; }\n        .header { background-color: #1e3a8a; color: white; padding: 20px; text-align: center; }\n        .content { background-color: #f9fafb; padding: 20px; margin-top: 20px; }\n        .section { margin-bottom: 25px; }\n        .section-title { font-weight: bold; color: #1e3a8a; font-size: 16px; margin-bottom: 10px; border-bottom: 2px solid #1e3a8a; padding-bottom: 5px; }\n        .info-row { display: flex; margin-bottom: 8px; }\n        .info-label { font-weight: bold; width: 180px; color: #4b5563; }\n        .info-value { color: #111827; }\n        .highlight-box { background-color: #dbeafe; border-left: 4px solid #1e3a8a; padding: 15px; margin: 20px 0; }\n        .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px; }\n        .next-steps { background-color: #ecfdf5; border: 1px solid #10b981; padding: 15px; border-radius: 5px; margin: 20px 0; }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>PortFlow - Freight Booking Confirmed</h1>\n        </div>\n        \n        <div class=\"content\">\n            <div class=\"highlight-box\">\n                <h2 style=\"margin-top: 0;\">Hi {{$json.customer_name}},</h2>\n                <p>Thank you for your shipping enquiry! We've received your request and our team is preparing your quote.</p>\n                <p><strong>Reference Number:</strong> {{$json.quote_number}}<br>\n                <strong>Submitted:</strong> {{$json.timestamp}}</p>\n            </div>\n\n            <!-- SHIPMENT DETAILS -->\n            <div class=\"section\">\n                <div class=\"section-title\">📦 SHIPMENT DETAILS</div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Origin Port:</div>\n                    <div class=\"info-value\">{{$json.origin_port}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Destination Port:</div>\n                    <div class=\"info-value\">{{$json.destination_port}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Shipping Mode:</div>\n                    <div class=\"info-value\">{{$json.shipment_mode}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Preferred Date:</div>\n                    <div class=\"info-value\">{{$json.preferred_date}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Incoterm:</div>\n                    <div class=\"info-value\">{{$json.incoterm}}</div>\n                </div>\n            </div>\n\n            <!-- CARGO DETAILS -->\n            <div class=\"section\">\n                <div class=\"section-title\">📋 CARGO DETAILS</div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Container Type:</div>\n                    <div class=\"info-value\">{{$json.container_type}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Commodity:</div>\n                    <div class=\"info-value\">{{$json.commodity}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Gross Weight:</div>\n                    <div class=\"info-value\">{{$json.gross_weight}} {{$json.weight_unit}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Number of Pieces:</div>\n                    <div class=\"info-value\">{{$json.pieces_quantity}}</div>\n                </div>\n            </div>\n\n            <!-- SHIPPER DETAILS -->\n            <div class=\"section\">\n                <div class=\"section-title\">📤 SHIPPER INFORMATION</div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Name:</div>\n                    <div class=\"info-value\">{{$json.shipper_name}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Address:</div>\n                    <div class=\"info-value\">{{$json.shipper_address}}</div>\n                </div>\n            </div>\n\n            <!-- CONSIGNEE DETAILS -->\n            <div class=\"section\">\n                <div class=\"section-title\">📥 CONSIGNEE INFORMATION</div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Name:</div>\n                    <div class=\"info-value\">{{$json.consignee_name}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Address:</div>\n                    <div class=\"info-value\">{{$json.consignee_address}}</div>\n                </div>\n            </div>\n\n            <!-- CONTACT DETAILS -->\n            <div class=\"section\">\n                <div class=\"section-title\">👤 YOUR CONTACT DETAILS</div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Name:</div>\n                    <div class=\"info-value\">{{$json.customer_name}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Company:</div>\n                    <div class=\"info-value\">{{$json.company_name}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Email:</div>\n                    <div class=\"info-value\">{{$json.email}}</div>\n                </div>\n                <div class=\"info-row\">\n                    <div class=\"info-label\">Phone:</div>\n                    <div class=\"info-value\">{{$json.phone}}</div>\n                </div>\n            </div>\n\n            <!-- NEXT STEPS -->\n            <div class=\"next-steps\">\n                <h3 style=\"margin-top: 0; color: #047857;\">✅ What Happens Next?</h3>\n                <ol style=\"margin: 10px 0; padding-left: 20px;\">\n                    <li>Our freight specialists are reviewing your requirements</li>\n                    <li>We'll prepare a competitive quote within <strong>2 hours</strong></li>\n                    <li>You'll receive a detailed quotation via email</li>\n                    <li>Questions? Reply to this email or call us directly</li>\n                </ol>\n            </div>\n\n            <div style=\"text-align: center; margin: 30px 0;\">\n                <p style=\"color: #6b7280; margin-bottom: 10px;\">Need to make changes or have questions?</p>\n                <a href=\"mailto:support@portflow.com\" style=\"background-color: #1e3a8a; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;\">Contact Us</a>\n            </div>\n        </div>\n\n        <div class=\"footer\">\n            <p><strong>PortFlow Logistics</strong><br>\n            Singapore | Kuala Lumpur | Bangkok<br>\n            📧 support@portflow.com | 📞 +65 1234 5678<br>\n            <a href=\"https://portflow.com\" style=\"color: #1e3a8a;\">www.portflow.com</a></p>\n        </div>\n    </div>\n</body>\n</html>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        -224,
+        0
+      ],
+      "id": "934eec68-63e5-49fb-a16f-b1f742912130",
+      "name": "Send email",
+      "webhookId": "e2e50630-b2c2-4b7a-a783-fe42bfad0cdd",
+      "credentials": {
+        "smtp": {
+          "id": "0rBpObU3o0ujt6go",
+          "name": "SMTP account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Send email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Save to Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "240cff4e-085d-4096-a8cb-3a4efebb6920",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "71411c9b76945b42189de2061db60d6292df24837818b4c075c9c513da06db6d"
+  },
+  "id": "5VsCuryqNQkoOBH6HhJgM",
+  "tags": []
+}
